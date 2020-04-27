@@ -1,0 +1,25 @@
+{
+  "name": "typenode-express",
+  "version": "1.0.0",
+  "description": "jobs back end",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch ./src/* --exec ts-node ./src/index.ts",
+    "start:watch": "nodemon --watch ./src/* --exec ts-node ./src/index.ts",
+    "start:prod": "pm2 start ./dist/index",
+    "build": "tsc"
+  },
+  "author": "reouven mimoun",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-serve-static-core": "^4.17.5",
+    "@types/multer": "^1.4.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "multer": "^1.4.2"
+  }
+}
